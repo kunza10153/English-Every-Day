@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="ฝึกภาษาอังกฤษทุกวันเพื่อทำงานและคุยกับต่างชาติ">
+  <title>English Every Day</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230d6d68'/%3E%3Cpath d='M18 18h30v8H28v7h17v8H28v15h-10z' fill='white'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <header>
+      <a class="brand" href="#today" aria-label="English Every Day home"><span>E</span> English Every Day</a>
+      <p id="streak" class="streak">เริ่มวันแรกของคุณ</p>
+    </header>
+
+    <section class="hero" id="today">
+      <div><p class="eyebrow">วันนี้ · 15 นาที</p><h1>ใช้ภาษาอังกฤษ<br>ให้เป็นส่วนหนึ่งของวัน</h1><p class="lead">โฟกัสงาน คุยกับต่างชาติ และเข้าใจสิ่งที่ฟังหรืออ่าน—not memorising isolated words.</p></div>
+      <div class="ring" aria-label="Daily progress"><strong id="progress-number">0%</strong><span>วันนี้</span></div>
+    </section>
+
+    <section class="mission"><strong>เป้าหมายของคุณ</strong><span>พูด ฟัง อ่าน เขียน เพื่อทำงานและสื่อสารกับคนต่างชาติอย่างมั่นใจ</span></section>
+
+    <section aria-labelledby="plan-title"><div class="section-head"><div><p class="eyebrow">Daily practice</p><h2 id="plan-title">แผนของวันนี้</h2></div><button class="text-button" id="reset" type="button">เริ่มใหม่</button></div>
+      <div class="tasks">
+        <article class="task"><label><input class="done" type="checkbox" data-task="listen"><span class="check"></span><span class="task-type">ฟัง · 5 นาที</span></label><h3>จับใจความก่อนแปล</h3><p>เลือกคลิปสั้นที่สนใจ แล้วตอบในใจว่า: ใครกำลังพูด? เรื่องอะไร? ผลคืออะไร?</p><a href="https://learnenglish.britishcouncil.org/free-resources/listening" target="_blank" rel="noreferrer">หาเรื่องฟัง ↗</a></article>
+        <article class="task"><label><input class="done" type="checkbox" data-task="read"><span class="check"></span><span class="task-type">อ่าน · 4 นาที</span></label><h3>อ่านเพื่อหาความหมาย</h3><p>อ่านข้อความสั้น 1 ชิ้น แล้วสรุปเป็นภาษาไทยหนึ่งประโยค ไม่ต้องแปลทุกคำ</p><a href="https://learnenglish.britishcouncil.org/free-resources/reading" target="_blank" rel="noreferrer">หาเรื่องอ่าน ↗</a></article>
+        <article class="task"><label><input class="done" type="checkbox" data-task="speak"><span class="check"></span><span class="task-type">พูด · 3 นาที</span></label><h3>พูดหนึ่งสถานการณ์จริง</h3><p>พูดออกเสียง: <em>Could you say that again, please?</em> แล้วต่อด้วยสิ่งที่คุณทำงานอยู่วันนี้</p><button class="speak-button" type="button" id="hear">▶ ฟังประโยค</button></article>
+        <article class="task"><label><input class="done" type="checkbox" data-task="write"><span class="check"></span><span class="task-type">เขียน · 3 นาที</span></label><h3>เขียนให้สื่อสารได้</h3><p>เขียนประโยคจริงหนึ่งประโยคเกี่ยวกับงานหรือวันของคุณ</p><textarea id="journal" maxlength="300" placeholder="Today, I am working on …" aria-label="Write one English sentence"></textarea><small id="saved">บันทึกอัตโนมัติบนอุปกรณ์นี้</small></article>
+      </div>
+    </section>
+
+    <section class="practice" aria-labelledby="practice-title"><p class="eyebrow">Quick check</p><h2 id="practice-title">ตรวจความเข้าใจ 30 วินาที</h2><p>เพื่อนพูดว่า: “The deadline is Friday.” ถ้าต้องการเช็กข้อมูล ควรพูดว่าอะไร?</p><div class="answers" id="answers"><button type="button" data-correct="false">Where is the deadline?</button><button type="button" data-correct="true">So, it’s due on Friday?</button></div><p id="feedback" aria-live="polite"></p></section>
+
+    <section class="next"><div><p class="eyebrow">Next lesson</p><h2>แนะนำตัวและถามคำถามต่อ</h2><p>สร้างบทสนทนาแรกที่ใช้ได้ทั้งในที่ทำงานและตอนเจอคนใหม่</p></div><a href="../lessons/0001-baseline-and-introduction.html">เปิดบทเรียน 1 →</a></section>
+    <footer>เรียนวันละนิดก็พอ กลับมาที่หน้านี้ทุกวัน แล้วทำให้ครบ 4 ช่อง</footer>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
